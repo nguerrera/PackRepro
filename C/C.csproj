@@ -4,16 +4,17 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{C4B35E5A-8566-4329-AB24-BF2B7F0C6FD3}</ProjectGuid>
+    <ProjectGuid>{BAEC56DE-5F45-4E07-B855-BC85D2BA1838}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>B</RootNamespace>
-    <AssemblyName>B</AssemblyName>
+    <RootNamespace>C</RootNamespace>
+    <AssemblyName>C</AssemblyName>
     <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
-    <VersionPrefix>3.0.0</VersionPrefix>
-    <VersionSuffix>test</VersionSuffix>
+    <VersionPrefix>4.0.0</VersionPrefix>
+    <VersionSuffix>
+    </VersionSuffix>
     <Version Condition=" '$(Version)' == '' and '$(VersionSuffix)' != '' ">$(VersionPrefix)-$(VersionSuffix)</Version>
     <Version Condition=" '$(Version)' == '' ">$(VersionPrefix)</Version>
     <PackageVersion Condition=" '$(PackageVersion)' == '' ">$(Version)</PackageVersion>
@@ -50,21 +51,10 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="Newtonsoft.Json">
-      <Version>11.0.2</Version>
-    </PackageReference>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="B.nuspec" />
+    <None Include="C.nuspec" />
     <None Include="Directory.Build.targets">
       <SubType>Designer</SubType>
     </None>
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\C\C.csproj">
-      <Project>{baec56de-5f45-4e07-b855-bc85d2ba1838}</Project>
-      <Name>C</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
