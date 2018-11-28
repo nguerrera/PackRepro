@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Project>
+  <Target Name="Pack">
+    <Exec Command="nuget pack $(MSBuildProjectFullPath) -OutputDirectory $(ProjectDir)$(OutputPath)" />
+  </Target>
+</Project>
